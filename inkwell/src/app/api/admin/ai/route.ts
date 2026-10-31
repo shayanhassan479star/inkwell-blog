@@ -9,7 +9,7 @@ import { hasServiceRole } from "@/lib/env";
 import { isSameOrigin, jsonError, jsonOk, rateLimit, readJson } from "@/lib/security";
 
 export const runtime = "nodejs";
-export const maxDuration = 60;
+export const maxDuration = 300;
 export const dynamic = "force-dynamic";
 
 /** GET → whether AI is configured and how much of today's allowance is left. Never returns secrets. */
