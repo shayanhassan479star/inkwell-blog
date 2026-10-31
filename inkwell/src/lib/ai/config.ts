@@ -62,7 +62,7 @@ export function getAiConfig(env: NodeJS.ProcessEnv = process.env): AiConfig {
     apiKey: keyOk ? (key as string) : "",
     baseUrl,
     maxOutputTokens: Number.isFinite(tokens) ? Math.min(Math.max(tokens, 256), 16000) : 4096,
-    timeoutMs: 90_000,
+    timeoutMs: 240_000,
   };
 }
 
